@@ -26,10 +26,11 @@ Refer to  [this document](https://github.com/neo4j-contrib/neo4j_doc_manager/blo
 
 ## Using Neo4j Doc Manager
 
-Ensure that you have a Neo4j instance up and running. If you have authentication enabled (version 2.2+) for Neo4j, be sure to set **NEO4J_AUTH** environment variable, containing your user and password. 
+Ensure that you have a Neo4j instance up and running. If you have authentication enabled (version 2.2+) for Neo4j, be sure to set the enviroment variables for **NEO4J_AUTH** containing your username and password as well as **NEO4J_URI** containing your host and port.
 
 ```
 export NEO4J_AUTH=user:password
+export NEO4J_URI=http://localhost:7474/
 ```
 
 Ensure that mongo is running a *replica set*. To initiate a replica set start mongo with:
